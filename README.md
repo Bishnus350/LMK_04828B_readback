@@ -6,7 +6,7 @@ I modify the code available in GitLab from Mitch Burnett "https://gitlab.ras.byu
 - LMK04828 readback config data are:
 - 0x018206, 0x018306, 0x018800, 
 - LMK register readbacks are R386, R387, R392: 0x018206, 0x018306, 0x018800
-- LED is lit
+- LED is lit /0x018800 means lit
 - PLL1 DLD is set
 - PLL2 DLD is set
 # When the CLK_104 LED is OFF
@@ -14,6 +14,6 @@ I modify the code available in GitLab from Mitch Burnett "https://gitlab.ras.byu
 - LMK04828 readback config data are:
 - 0x018204, 0x018306, 0x018810, 
 - LMK register readbacks are R386, R387, R392: 0x018204, 0x018306, 0x018810
-- LED is not lit
+- LED is not lit /0x018810 means not lit
 - PLL1 DLD is not set
 - PLL2 DLD is not set
