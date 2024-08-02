@@ -1,5 +1,5 @@
 # LMK_04828B_readback 10 MHZ status 
-I modify the code available in GitLab from Mitch Burnett "https://gitlab.ras.byu.edu/alpaca/i2c-utils" to get a readback for 3 registers R386, R387, R392: 0x018206, 0x018306, 0x018800 in order to read the Clk_104 status in ZCU216 board. The code is written in C program and it gives us readback according to the status of LEDs of Clk_104
+I modify the code available in GitLab from Mitch Burnett "https://gitlab.ras.byu.edu/alpaca/i2c-utils" to get a readback for 3 registers R386, R387, R392: 0x018206, 0x018306, 0x018800 to read the Clk_104 status in ZCU216 board. The code is written in C program and it gives us readback according to the status of LEDs of Clk_104
 # When the CLK_104 LED is ON
 - casper@localhost:$./alpaca_prg_pll_nolmk 
 - Reading LMK04828 register config
@@ -17,3 +17,5 @@ I modify the code available in GitLab from Mitch Burnett "https://gitlab.ras.byu
 - LED is not lit /0x018810 means not lit
 - PLL1 DLD is not set
 - PLL2 DLD is not set
+# Note: ZCU216 board only communicate using i2c. 
+# Note: RFSOC4x2 board can communicate by both i2c and spidev
